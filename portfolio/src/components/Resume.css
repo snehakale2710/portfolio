@@ -1,0 +1,96 @@
+.resume {
+  background: #0b0e20;
+}
+
+.resume-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 60px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #171a38, #0e1128);
+  border: 1px solid #30345c;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.resume-label {
+  color: #8f80ff;
+  font-size: 13px;
+}
+
+.resume-content h2 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.resume-content p {
+  color: #a4a7be;
+  line-height: 1.7;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.resume-buttons a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #595d88;
+}
+
+.resume-buttons a:first-child {
+  background: #7668ff;
+  border-color: #7668ff;
+}
+
+.resume-preview {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-paper {
+  width: 210px;
+  height: 280px;
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px #0008;
+}
+
+.resume-line {
+  height: 8px;
+  background: #ddd;
+  margin-bottom: 10px;
+}
+
+.resume-line.big {
+  width: 70%;
+  height: 15px;
+}
+
+.resume-line.short {
+  width: 50%;
+}
+
+.resume-paper hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+@media (max-width: 700px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+    padding: 35px 20px;
+  }
+
+  .resume-content h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,106 @@
+.about {
+  background: #080b1a;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-content > p {
+  color: #b8bad0;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.about-highlights div {
+  padding: 20px;
+  border: 1px solid #25294b;
+  border-radius: 15px;
+  background: rgba(20, 24, 50, 0.7);
+}
+
+.about-highlights span {
+  font-size: 28px;
+}
+
+.about-highlights h4 {
+  margin: 12px 0 8px;
+}
+
+.about-highlights p {
+  color: #999db8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.about-card {
+  padding: 35px;
+  border-radius: 25px;
+  border: 1px solid #30345b;
+  background: linear-gradient(145deg, #121630, #0d1024);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.about-card-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.about-card > p {
+  color: #aeb1c7;
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.about-stats div {
+  flex: 1;
+  text-align: center;
+}
+
+.about-stats strong {
+  display: block;
+  font-size: 25px;
+  color: #8b7cff;
+}
+
+.about-stats span {
+  color: #9296b2;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}

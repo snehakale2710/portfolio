@@ -1,0 +1,70 @@
+.education {
+  background: #0b0e20;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+}
+
+.education-card {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  border: 1px solid #292d50;
+  background: #11152d;
+  border-radius: 20px;
+}
+
+.education-icon {
+  min-width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: #202544;
+  font-size: 30px;
+}
+
+.education-year {
+  color: #8e80ff;
+  font-size: 14px;
+}
+
+.education-card h3 {
+  margin: 8px 0;
+  font-size: 23px;
+}
+
+.education-card h4 {
+  color: #b5b7ca;
+  margin-bottom: 8px;
+}
+
+.education-card p {
+  color: #999db6;
+  line-height: 1.6;
+}
+
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.education-tags span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #202544;
+  color: #aaa2ff;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .education-card {
+    flex-direction: column;
+  }
+}

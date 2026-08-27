@@ -10,6 +10,7 @@ function Hero() {
         <span className="circle circle1"></span>
         <span className="circle circle2"></span>
         <span className="circle circle3"></span>
+        <span className="grid-overlay"></span>
       </div>
 
       <div className="hero-container">
@@ -26,19 +27,30 @@ function Hero() {
           </h1>
 
           <h2>
-            B.Sc. Computer Science Student
+            Building Intelligent Solutions with AI, Code & Creativity
           </h2>
 
           <div className="role">
-            Frontend Developer
+            Prompt Engineer Intern
+            <span className="role-divider">|</span>
+            AI/ML Enthusiast
+            <span className="role-divider">|</span>
+            Full Stack Developer
           </div>
 
           <p className="hero-description">
-            I am a passionate Computer Science student who loves
-            creating modern, responsive and user-friendly web
-            applications using React, JavaScript, Python and
-            other modern technologies.
+            I am a passionate technology professional with a strong interest
+            in Artificial Intelligence, Machine Learning, Prompt Engineering,
+            and modern web development. I enjoy transforming ideas into
+            practical, responsive, and intelligent digital solutions.
           </p>
+
+          {/* Internship Badge */}
+          <div className="internship-badge">
+            <span className="status-dot"></span>
+            Currently working as a Prompt Engineer Intern at
+            <strong> Intellisys IT Solutions Private Limited</strong>
+          </div>
 
           {/* Buttons */}
           <div className="hero-buttons">
@@ -47,13 +59,13 @@ function Hero() {
               href="#projects"
               className="btn primary-btn"
             >
-              View Projects
+              View My Projects
               <span>→</span>
             </a>
 
             <a
               href="/resume.pdf"
-              download
+              download="Sneha_Kale_Resume.pdf"
               className="btn secondary-btn"
             >
               Download Resume
@@ -66,27 +78,31 @@ function Hero() {
           <div className="social-links">
 
             <a
-              href="https://github.com/"
+              href="https://github.com/snehakale2710"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
             >
               <i className="fab fa-github"></i>
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sneha-kale-45b321369/"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
 
             <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
+              href="mailto:snehakale27102005@gmail.com"
+              aria-label="Email"
+              title="Email"
             >
-              <i className="fab fa-instagram"></i>
+              <i className="fas fa-envelope"></i>
             </a>
 
           </div>
@@ -97,6 +113,9 @@ function Hero() {
         <div className="hero-image-container">
 
           <div className="image-glow"></div>
+
+          <div className="orbit orbit-one"></div>
+          <div className="orbit orbit-two"></div>
 
           <div className="profile-ring">
 
@@ -114,15 +133,23 @@ function Hero() {
           {/* Floating Cards */}
 
           <div className="floating-card card-one">
-            ⚛️ React
+            <span className="card-icon">🤖</span>
+            AI / ML
           </div>
 
           <div className="floating-card card-two">
-            🐍 Python
+            <span className="card-icon">⚛️</span>
+            React
           </div>
 
           <div className="floating-card card-three">
-            💻 Developer
+            <span className="card-icon">🐍</span>
+            Python
+          </div>
+
+          <div className="floating-card card-four">
+            <span className="card-icon">✨</span>
+            Prompt Engineering
           </div>
 
         </div>
