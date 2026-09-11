@@ -17,7 +17,7 @@
   border-radius: 20px;
 }
 
-.contact-info > p {
+.contact-info>p {
   color: #999db7;
   line-height: 1.7;
   margin: 15px 0 30px;
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-.contact-item > span {
+.contact-item>span {
   width: 45px;
   height: 45px;
   display: grid;

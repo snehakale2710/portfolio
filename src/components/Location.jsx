@@ -1,7 +1,10 @@
 import React from "react";
 import "./Location.css";
+import profile from "../data/profile";
 
 function Location() {
+  const { city, state, country } = profile.location;
+
   return (
     <section className="location section" id="location">
       <div className="section-heading">
@@ -13,33 +16,31 @@ function Location() {
       <div className="location-container">
         <div className="location-info">
           <div className="location-icon">📍</div>
-
-          <h3>Pune</h3>
-
-          <p>Maharashtra, India</p>
+          <h3>{city}</h3>
+          <p>
+            {state}, {country}
+          </p>
 
           <div className="location-details">
             <div>
               <strong>City</strong>
-              <span>Pune</span>
+              <span>{city}</span>
             </div>
-
             <div>
               <strong>State</strong>
-              <span>Maharashtra</span>
+              <span>{state}</span>
             </div>
-
             <div>
               <strong>Country</strong>
-              <span>India</span>
+              <span>{country}</span>
             </div>
           </div>
         </div>
 
         <div className="map-box">
           <iframe
-            title="Pune Location"
-            src="https://www.google.com/maps?q=Pune,Maharashtra,India&output=embed"
+            title={`${city} Location`}
+            src={`https://www.google.com/maps?q=${city},${state},${country}&output=embed`}
             loading="lazy"
           ></iframe>
         </div>

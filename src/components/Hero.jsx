@@ -1,11 +1,10 @@
 import React from "react";
 import "./Hero.css";
+import profile from "../data/profile";
 
 function Hero() {
   return (
     <section className="hero" id="home">
-
-      {/* Animated Background */}
       <div className="hero-bg">
         <span className="circle circle1"></span>
         <span className="circle circle2"></span>
@@ -14,28 +13,24 @@ function Hero() {
       </div>
 
       <div className="hero-container">
-
-        {/* LEFT SIDE */}
         <div className="hero-content">
-
-          <p className="hero-greeting">
-            Hello, I'm
-          </p>
+          <p className="hero-greeting">Hello, I'm</p>
 
           <h1>
             Sneha <span>Kale</span>
           </h1>
 
-          <h2>
-            Building Intelligent Solutions with AI, Code & Creativity
-          </h2>
+          <h2>Building Intelligent Solutions with AI, Code & Creativity</h2>
 
           <div className="role">
-            Prompt Engineer Intern
-            <span className="role-divider">|</span>
-            AI/ML Enthusiast
-            <span className="role-divider">|</span>
-            Full Stack Developer
+            {profile.roles.map((role, i) => (
+              <React.Fragment key={role}>
+                {role}
+                {i < profile.roles.length - 1 && (
+                  <span className="role-divider">|</span>
+                )}
+              </React.Fragment>
+            ))}
           </div>
 
           <p className="hero-description">
@@ -45,40 +40,31 @@ function Hero() {
             practical, responsive, and intelligent digital solutions.
           </p>
 
-          {/* Internship Badge */}
           <div className="internship-badge">
             <span className="status-dot"></span>
-            Currently working as a Prompt Engineer Intern at
-            <strong> Intellisys IT Solutions Private Limited</strong>
+            Currently working as a {profile.title} at
+            <strong> {profile.company}</strong>
           </div>
 
-          {/* Buttons */}
           <div className="hero-buttons">
-
-            <a
-              href="#projects"
-              className="btn primary-btn"
-            >
+            <a href="#projects" className="btn primary-btn">
               View My Projects
               <span>→</span>
             </a>
 
             <a
-              href="/resume.pdf"
-              download="Sneha_Kale_Resume.pdf"
+              href={profile.resume.path}
+              download={profile.resume.downloadName}
               className="btn secondary-btn"
             >
               Download Resume
               <span>↓</span>
             </a>
-
           </div>
 
-          {/* Social Links */}
           <div className="social-links">
-
             <a
-              href="https://github.com/snehakale2710"
+              href={profile.social.github}
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -88,7 +74,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/sneha-kale-45b321369/"
+              href={profile.social.linkedin}
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -98,39 +84,25 @@ function Hero() {
             </a>
 
             <a
-              href="mailto:snehakale27102005@gmail.com"
+              href={`mailto:${profile.email}`}
               aria-label="Email"
               title="Email"
             >
               <i className="fas fa-envelope"></i>
             </a>
-
           </div>
-
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="hero-image-container">
-
           <div className="image-glow"></div>
-
           <div className="orbit orbit-one"></div>
           <div className="orbit orbit-two"></div>
 
           <div className="profile-ring">
-
             <div className="profile-image">
-
-              <img
-                src="/profile.jpg"
-                alt="Sneha Kale"
-              />
-
+              <img src="/profile.jpg" alt={profile.name} />
             </div>
-
           </div>
-
-          {/* Floating Cards */}
 
           <div className="floating-card card-one">
             <span className="card-icon">🤖</span>
@@ -151,20 +123,13 @@ function Hero() {
             <span className="card-icon">✨</span>
             Prompt Engineering
           </div>
-
         </div>
-
       </div>
 
-      {/* Scroll Indicator */}
       <div className="scroll-indicator">
-
         <span></span>
-
         <p>Scroll Down</p>
-
       </div>
-
     </section>
   );
 }

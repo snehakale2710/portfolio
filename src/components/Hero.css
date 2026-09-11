@@ -13,16 +13,12 @@
   padding-top: 75px;
 
   background:
-    radial-gradient(
-      circle at 15% 20%,
+    radial-gradient(circle at 15% 20%,
       rgba(124, 58, 237, 0.18),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 85% 80%,
+      transparent 30%),
+    radial-gradient(circle at 85% 80%,
       rgba(6, 182, 212, 0.15),
-      transparent 30%
-    ),
+      transparent 30%),
     #080b14;
 
   color: white;
@@ -89,29 +85,24 @@
   inset: 0;
 
   background-image:
-    linear-gradient(
+    linear-gradient(rgba(139, 92, 246, 0.035) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
       rgba(139, 92, 246, 0.035) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(139, 92, 246, 0.035) 1px,
-      transparent 1px
-    );
+      transparent 1px);
 
   background-size: 60px 60px;
 
-  mask-image: linear-gradient(
-    to bottom,
-    black,
-    transparent 90%
-  );
+  mask-image: linear-gradient(to bottom,
+      black,
+      transparent 90%);
 }
 
 
 /* Background Animation */
 
 @keyframes floatingCircle {
+
   0%,
   100% {
     transform: translateY(0);
@@ -200,11 +191,9 @@
 /* Gradient Name */
 
 .hero-content h1 span {
-  background: linear-gradient(
-    90deg,
-    #8b5cf6,
-    #06b6d4
-  );
+  background: linear-gradient(90deg,
+      #8b5cf6,
+      #06b6d4);
 
   background-clip: text;
 
@@ -229,12 +218,10 @@
 
   margin: 24px 0 15px;
 
-  background: linear-gradient(
-    90deg,
-    #ffffff,
-    #d8b4fe,
-    #67e8f9
-  );
+  background: linear-gradient(90deg,
+      #ffffff,
+      #d8b4fe,
+      #67e8f9);
 
   background-clip: text;
 
@@ -334,6 +321,7 @@
 }
 
 @keyframes pulseDot {
+
   0%,
   100% {
     opacity: 1;
@@ -387,11 +375,9 @@
 .primary-btn {
   color: white;
 
-  background: linear-gradient(
-    135deg,
-    #7c3aed,
-    #06b6d4
-  );
+  background: linear-gradient(135deg,
+      #7c3aed,
+      #06b6d4);
 
   box-shadow:
     0 10px 30px rgba(124, 58, 237, 0.25);
@@ -508,11 +494,9 @@
 
   border-radius: 50%;
 
-  background: linear-gradient(
-    135deg,
-    #7c3aed,
-    #06b6d4
-  );
+  background: linear-gradient(135deg,
+      #7c3aed,
+      #06b6d4);
 
   filter: blur(80px);
 
@@ -522,6 +506,7 @@
 }
 
 @keyframes glowPulse {
+
   0%,
   100% {
     opacity: 0.2;
@@ -602,17 +587,16 @@
 
   z-index: 2;
 
-  background: linear-gradient(
-    135deg,
-    #8b5cf6,
-    #06b6d4,
-    #ec4899
-  );
+  background: linear-gradient(135deg,
+      #8b5cf6,
+      #06b6d4,
+      #ec4899);
 
   animation: profileFloat 5s ease-in-out infinite;
 }
 
 @keyframes profileFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -732,6 +716,7 @@
 
 
 @keyframes floating {
+
   0%,
   100% {
     transform: translateY(0);

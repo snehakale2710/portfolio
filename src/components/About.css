@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.about-content > p {
+.about-content>p {
   color: #b8bad0;
   line-height: 1.8;
   margin-bottom: 15px;
@@ -68,7 +68,7 @@
   margin-bottom: 15px;
 }
 
-.about-card > p {
+.about-card>p {
   color: #aeb1c7;
   line-height: 1.7;
 }

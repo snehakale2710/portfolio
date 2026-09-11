@@ -1,5 +1,6 @@
 import React from "react";
 import "./Resume.css";
+import profile from "../data/profile";
 
 function Resume() {
   return (
@@ -7,7 +8,6 @@ function Resume() {
       <div className="resume-container">
         <div className="resume-content">
           <span className="resume-label">MY RESUME</span>
-
           <h2>Let's Build Something Amazing Together</h2>
 
           <p>
@@ -16,11 +16,11 @@ function Resume() {
           </p>
 
           <div className="resume-buttons">
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a href={profile.resume.path} target="_blank" rel="noreferrer">
               View Resume
             </a>
 
-            <a href="/resume.pdf" download>
+            <a href={profile.resume.path} download={profile.resume.downloadName}>
               Download Resume
             </a>
           </div>
@@ -32,9 +32,7 @@ function Resume() {
             <div className="resume-line"></div>
             <div className="resume-line"></div>
             <div className="resume-line short"></div>
-
             <hr />
-
             <div className="resume-line"></div>
             <div className="resume-line"></div>
             <div className="resume-line short"></div>

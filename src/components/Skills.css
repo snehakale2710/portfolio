@@ -119,11 +119,9 @@
 
   height: 100%;
 
-  background: linear-gradient(
-    90deg,
-    #6757ff,
-    #9b7cff
-  );
+  background: linear-gradient(90deg,
+      #6757ff,
+      #9b7cff);
 
   border-radius: 10px;
 }

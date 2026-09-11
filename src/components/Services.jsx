@@ -1,25 +1,16 @@
 import React from "react";
 import "./Services.css";
-
-const services = [
-  ["🌐", "Website Development", "Modern and responsive websites."],
-  ["💻", "Web Application Development", "Interactive applications using React."],
-  ["📊", "Dashboard Development", "Data-driven dashboards and reports."],
-  ["⚛️", "React Development", "Reusable and scalable React applications."],
-  ["🐍", "Python Development", "Python applications and automation."],
-  ["🔧", "Backend Development", "Server-side applications and APIs."],
-  ["🔗", "API Development", "REST API development and integration."],
-  ["🏢", "ERP Development", "Business and management applications."],
-];
+import SectionHeading from "./SectionHeading";
+import services from "../data/services";
 
 function Services() {
   return (
     <section className="services section" id="services">
-      <div className="section-heading">
-        <span>Services</span>
-       
-        <p>Development services and solutions I can work on.</p>
-      </div>
+      <SectionHeading
+        label="Services"
+        title="What I Can Do"
+        description="Development services and solutions I can work on."
+      />
 
       <div className="services-grid">
         {services.map(([icon, title, description]) => (

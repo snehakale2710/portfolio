@@ -1,254 +1,167 @@
-.education {
+.experience {
   background: #0b0e20;
   padding: 100px 8%;
 }
 
-/* Section Heading */
-
-.education .section-heading {
+.experience .section-heading {
   max-width: 750px;
   margin: 0 auto 60px;
   text-align: center;
 }
 
-.education .section-heading span {
+.experience .section-heading span {
   display: inline-block;
   color: #9b7cff;
-
   font-size: 15px;
   font-weight: 600;
-
   letter-spacing: 2px;
   text-transform: uppercase;
-
   margin-bottom: 10px;
 }
 
-.education .section-heading h2 {
+.experience .section-heading h2 {
   color: #ffffff;
-
   font-size: 38px;
-
   margin-bottom: 15px;
 }
 
-.education .section-heading p {
+.experience .section-heading p {
   color: #9b9fbb;
-
   font-size: 16px;
-
   line-height: 1.7;
 }
 
-/* Education Container */
-
-.education-container {
-  max-width: 1000px;
-
+.timeline {
+  max-width: 850px;
   margin: auto;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 25px;
+  position: relative;
+  padding-left: 35px;
+  border-left: 2px solid #292d50;
 }
 
-/* Education Card */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
 
-.education-card {
-  display: flex;
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
 
-  gap: 20px;
+.timeline-dot {
+  position: absolute;
+  left: -43px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7668ff;
+  border: 3px solid #0b0e20;
+  box-shadow: 0 0 0 2px #7668ff;
+}
 
+.experience-card {
   padding: 30px;
-
   border: 1px solid #292d50;
-
   background: #11152d;
-
   border-radius: 20px;
-
   transition: all 0.3s ease;
 }
 
-.education-card:hover {
-  transform: translateY(-7px);
-
+.experience-card:hover {
+  transform: translateY(-5px);
   border-color: #7668ff;
-
   box-shadow: 0 15px 35px rgba(118, 104, 255, 0.12);
 }
 
-/* Education Icon */
-
-.education-icon {
-  min-width: 60px;
-
-  height: 60px;
-
-  display: grid;
-
-  place-items: center;
-
-  border-radius: 15px;
-
-  background: #202544;
-
-  border: 1px solid #30355d;
-
-  font-size: 28px;
-}
-
-/* Content */
-
-.education-content {
-  flex: 1;
-}
-
-.education-year {
+.experience-date {
   display: inline-block;
-
   color: #8e80ff;
-
-  font-size: 14px;
-
+  font-size: 13px;
   font-weight: 600;
-
-  margin-bottom: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #202544;
+  margin-bottom: 12px;
 }
 
-.education-card h3 {
+.experience-card h3 {
   color: #ffffff;
-
-  margin: 8px 0;
-
   font-size: 21px;
-
-  line-height: 1.4;
+  margin: 8px 0 4px;
 }
 
-.education-card h4 {
+.experience-card h4 {
   color: #b5b7ca;
-
-  margin-bottom: 10px;
-
   font-size: 15px;
-
-  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
-.education-card p {
+.experience-card p {
   color: #999db6;
-
   line-height: 1.7;
-
   font-size: 14px;
-
   margin: 0;
 }
 
-/* Percentage */
-
-.education-result {
-  display: inline-block;
-
-  margin-top: 16px;
-
-  padding: 7px 14px;
-
-  border-radius: 20px;
-
-  background: #202544;
-
-  border: 1px solid #30355d;
-
-  color: #aaa2ff;
-
-  font-size: 13px;
-
-  font-weight: 600;
-}
-
-/* Tags */
-
-.education-tags {
+.technology-list {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 8px;
-
   margin-top: 18px;
 }
 
-.education-tags span {
+.technology-list span {
   padding: 6px 12px;
-
   border-radius: 20px;
-
   background: #202544;
-
   color: #aaa2ff;
-
   font-size: 12px;
-
   border: 1px solid transparent;
-
   transition: 0.3s;
 }
 
-.education-tags span:hover {
+.technology-list span:hover {
   border-color: #7668ff;
-
   color: #ffffff;
 }
 
-/* Tablet */
-
 @media (max-width: 850px) {
-  .education {
+  .experience {
     padding: 80px 6%;
   }
 
-  .education-container {
-    grid-template-columns: 1fr;
-  }
-
-  .education .section-heading h2 {
+  .experience .section-heading h2 {
     font-size: 32px;
   }
 }
 
-/* Mobile */
-
 @media (max-width: 600px) {
-  .education {
+  .experience {
     padding: 70px 5%;
   }
 
-  .education-card {
-    flex-direction: column;
+  .timeline {
+    padding-left: 25px;
+  }
 
+  .timeline-dot {
+    left: -33px;
+  }
+
+  .experience-card {
     padding: 25px;
   }
 
-  .education-icon {
-    min-width: 55px;
-
-    width: 55px;
-    height: 55px;
-  }
-
-  .education-card h3 {
+  .experience-card h3 {
     font-size: 19px;
   }
 
-  .education .section-heading h2 {
+  .experience .section-heading h2 {
     font-size: 28px;
   }
 
-  .education .section-heading p {
+  .experience .section-heading p {
     font-size: 14px;
   }
 }

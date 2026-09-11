@@ -1,0 +1,58 @@
+const projects = [
+  {
+    title: "STYLE HUB - E-Commerce Website",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800",
+    description: "A modern clothing e-commerce website inspired by popular fashion platforms.",
+    features: ["Product browsing", "Wishlist", "Shopping cart", "Checkout", "User authentication"],
+    technologies: ["React", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    github: "https://github.com/",
+    live: "#",
+  },
+  {
+    title: "ERP Management System",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800",
+    description: "A management system designed to organize business operations and data.",
+    features: ["Dashboard", "Data management", "Reports", "User management"],
+    technologies: ["Python", "SQL", "HTML", "CSS"],
+    github: "https://github.com/",
+    live: "#",
+  },
+  {
+    title: "Power BI Dashboard",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+    description: "Interactive business dashboard for analyzing data and generating insights.",
+    features: ["Interactive charts", "Data visualization", "KPIs", "Business insights"],
+    technologies: ["Power BI", "SQL", "Data Analysis"],
+    github: "https://github.com/",
+    live: "#",
+  },
+  {
+    title: "Food Delivery Application",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
+    description: "A food ordering application with restaurant and food browsing features.",
+    features: ["Restaurant listing", "Food menu", "Cart", "Order management"],
+    technologies: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/",
+    live: "#",
+  },
+  {
+    title: "Real Estate Website",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
+    description: "A responsive real estate platform for browsing and viewing properties.",
+    features: ["Property listing", "Search", "Property details", "Contact form"],
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/",
+    live: "#",
+  },
+  {
+    title: "AI / ML Project",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+    description: "An academic AI/ML project demonstrating data processing and machine learning concepts.",
+    features: ["Data processing", "Prediction", "Model analysis"],
+    technologies: ["Python", "Machine Learning", "Pandas"],
+    github: "https://github.com/",
+    live: "#",
+  },
+];
+
+export default projects;
