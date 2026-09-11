@@ -36,12 +36,6 @@ body {
   letter-spacing: 2px;
 }
 
-.section-heading h2 {
-  margin: 10px 0;
-  font-size: 40px;
-  background: linear-gradient(90deg, #ffffff, #9387ff);
-  -webkit-text-fill-color: transparent;
-}
 
 .section-heading p {
   color: #9296b0;

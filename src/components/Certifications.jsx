@@ -33,8 +33,7 @@ function Certifications() {
     <section className="certifications section" id="certifications">
       <div className="section-heading">
         <span>Achievements</span>
-        <h2>Certifications & Achievements</h2>
-        <p>Milestones from my learning journey.</p>
+        
       </div>
 
       <div className="cert-grid">
@@ -46,7 +45,7 @@ function Certifications() {
 
             <p>{item.description}</p>
 
-            <button>View Certificate</button>
+           
           </div>
         ))}
       </div>

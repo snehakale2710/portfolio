@@ -99,7 +99,7 @@ function Footer() {
         <div className="footer-contact">
           <h3>Contact</h3>
 
-          <p>📧 snehakale@example.com</p>
+          <p>📧 snehakale27102005@gmail.com</p>
           <p>📍 Pune, Maharashtra</p>
           <p>🇮🇳 India</p>
         </div>

@@ -34,7 +34,7 @@ function Contact() {
 
             <div>
               <small>Email</small>
-              <p>snehakale@example.com</p>
+              <p>snehakale27102005@gmail.com</p>
             </div>
           </div>
 
@@ -43,7 +43,7 @@ function Contact() {
 
             <div>
               <small>Phone</small>
-              <p>+91 XXXXX XXXXX</p>
+              <p>+91 90214 28566</p>
             </div>
           </div>
 
@@ -52,7 +52,7 @@ function Contact() {
 
             <div>
               <small>LinkedIn</small>
-              <p>linkedin.com/in/your-profile</p>
+              <p>linkedin.com/in/snehakale2710</p>
             </div>
           </div>
 

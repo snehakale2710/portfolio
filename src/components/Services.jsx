@@ -17,7 +17,7 @@ function Services() {
     <section className="services section" id="services">
       <div className="section-heading">
         <span>Services</span>
-        <h2>What I Can Do</h2>
+       
         <p>Development services and solutions I can work on.</p>
       </div>
 
