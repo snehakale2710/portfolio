@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Skills.css";
 import SectionHeading from "./SectionHeading";
@@ -9,22 +10,25 @@ function Skills() {
       <SectionHeading
         label="My Skills"
         title="Technologies I Work With"
-        description="A collection of technologies and tools I use to build applications, solve problems, and explore AI-driven solutions."
+        description="A collection of technologies and tools I use to build applications, develop solutions, work with data, and explore AI-driven technologies."
       />
 
-      <div className="skills-grid">
-        {skills.map((skill) => (
-          <div className="skill-card" key={skill.name}>
-            <div className="skill-top">
-              <span className="skill-icon">{skill.icon}</span>
-              <h3>{skill.name}</h3>
+      <div className="skills-categories">
+        {skills.map((category) => (
+          <div className="skills-category" key={category.category}>
+            <div className="category-header">
+              <div className="category-icon">{category.icon}</div>
+              <h3>{category.category}</h3>
             </div>
 
-            <div className="skill-bar">
-              <span style={{ width: skill.level }}></span>
+            <div className="skills-list">
+              {category.skills.map((skill) => (
+                <div className="skill-item" key={skill.name}>
+                  <span className="skill-item-icon">{skill.icon}</span>
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
             </div>
-
-            <small>{skill.level}</small>
           </div>
         ))}
       </div>

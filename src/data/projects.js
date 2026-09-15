@@ -1,55 +1,110 @@
 const projects = [
   {
+    title: "Hybrid Sentiment Analyzer",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop",
+    description:
+      "An intelligent sentiment analysis application that analyzes text and identifies whether the expressed sentiment is positive, negative, or neutral.",
+    features: [
+      "Text sentiment analysis",
+      "Positive, negative and neutral classification",
+      "Data visualization",
+      "Interactive analysis",
+    ],
+    technologies: ["Python", "NLP", "Machine Learning", "Pandas"],
+    github: "https://github.com/",
+    live: "#",
+  },
+
+  {
     title: "STYLE HUB - E-Commerce Website",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800",
-    description: "A modern clothing e-commerce website inspired by popular fashion platforms.",
-    features: ["Product browsing", "Wishlist", "Shopping cart", "Checkout", "User authentication"],
-    technologies: ["React", "CSS", "JavaScript", "Node.js", "MongoDB"],
-    github: "https://github.com/",
-    live: "#",
+    image:
+      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&auto=format&fit=crop",
+    description:
+      "A modern full-stack fashion e-commerce website inspired by leading online fashion platforms, providing users with a smooth shopping experience.",
+    features: [
+      "Product browsing",
+      "Category filtering",
+      "Wishlist management",
+      "Shopping cart",
+      "Checkout and payment",
+      "User authentication",
+    ],
+    technologies: ["React", "JavaScript", "CSS", "Python", "Flask", "MongoDB"],
+    github: "https://github.com/snehakale2710/myntra_clone.git",
+    live: "https://myntra-clone-tau-gilt.vercel.app/",
   },
+
   {
-    title: "ERP Management System",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800",
-    description: "A management system designed to organize business operations and data.",
-    features: ["Dashboard", "Data management", "Reports", "User management"],
-    technologies: ["Python", "SQL", "HTML", "CSS"],
-    github: "https://github.com/",
-    live: "#",
+    title: "Visionary Times",
+    image:
+      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop",
+    description:
+      "A modern business and innovation magazine website featuring inspiring stories, entrepreneurs, technology trends, and ideas shaping the future.",
+    features: [
+      "Modern magazine layout",
+      "Hero slider",
+      "Business and innovation articles",
+      "Multi-page navigation",
+      "Responsive design",
+    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github:
+      "https://github.com/snehakale2710/javascript_tutorial/tree/main/day9",
+    live: "https://javascript-tutorial-beige.vercel.app",
   },
+
   {
-    title: "Power BI Dashboard",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-    description: "Interactive business dashboard for analyzing data and generating insights.",
-    features: ["Interactive charts", "Data visualization", "KPIs", "Business insights"],
-    technologies: ["Power BI", "SQL", "Data Analysis"],
-    github: "https://github.com/",
-    live: "#",
-  },
-  {
-    title: "Food Delivery Application",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
-    description: "A food ordering application with restaurant and food browsing features.",
-    features: ["Restaurant listing", "Food menu", "Cart", "Order management"],
-    technologies: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/",
-    live: "#",
-  },
-  {
-    title: "Real Estate Website",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
-    description: "A responsive real estate platform for browsing and viewing properties.",
-    features: ["Property listing", "Search", "Property details", "Contact form"],
+    title: "Electricity Bill Calculator",
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop",
+    description:
+      "A user-friendly electricity bill calculator that calculates estimated electricity charges based on consumed units and applicable billing rates.",
+    features: [
+      "Electricity unit input",
+      "Automatic bill calculation",
+      "Slab-based calculation",
+      "Instant result display",
+      "Simple and responsive interface",
+    ],
     technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/",
     live: "#",
   },
+
   {
-    title: "AI / ML Project",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
-    description: "An academic AI/ML project demonstrating data processing and machine learning concepts.",
-    features: ["Data processing", "Prediction", "Model analysis"],
-    technologies: ["Python", "Machine Learning", "Pandas"],
+    title: "Employee Salary Calculator",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop",
+    description:
+      "A salary calculation application that helps calculate an employee's gross salary, allowances, deductions, and final net salary.",
+    features: [
+      "Employee salary input",
+      "Allowance calculation",
+      "Deduction calculation",
+      "Gross salary calculation",
+      "Net salary calculation",
+    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/",
+    live: "#",
+  },
+
+  {
+    title: "ATM Withdrawal Machine",
+    image:
+      "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&auto=format&fit=crop",
+    description:
+      "A Python-based ATM simulation that demonstrates real-world banking operations such as balance checking, cash withdrawal, deposit, and transaction validation.",
+    features: [
+      "PIN authentication",
+      "Balance checking",
+      "Cash withdrawal",
+      "Deposit functionality",
+      "Withdrawal validation",
+      "Transaction handling",
+    ],
+    technologies: ["Python", "OOP", "Classes", "Functions"],
     github: "https://github.com/",
     live: "#",
   },
