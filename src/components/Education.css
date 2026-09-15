@@ -68,3 +68,56 @@
     flex-direction: column;
   }
 }
+.education-achievements {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+
+.achievements-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.achievement-card {
+  padding: 22px 16px;
+  text-align: center;
+  border: 1px solid #292d50;
+  border-radius: 16px;
+  background: #11152d;
+}
+
+.achievement-card > div {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.achievement-card h4 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.achievement-card p {
+  color: #999db6;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}

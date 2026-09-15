@@ -1,5 +1,6 @@
 import React from "react";
 import "./Education.css";
+import achievements from "../data/certifications";
 
 function Education() {
   return (
@@ -78,6 +79,19 @@ function Education() {
             <h3>Secondary School Certificate (10th)</h3>
             <h4>Secondary Education</h4>
           </div>
+        </div>
+      </div>
+
+      <div className="education-achievements">
+        <h3 className="achievements-title">Achievements & Milestones</h3>
+        <div className="achievements-grid">
+          {achievements.map((item) => (
+            <div className="achievement-card" key={item.title}>
+              <div>{item.icon}</div>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
