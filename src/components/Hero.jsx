@@ -53,12 +53,13 @@ function Hero() {
             </a>
 
             <a
-              href={profile.resume.path}
-              download={profile.resume.downloadName}
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="btn secondary-btn"
             >
-              Download Resume
-              <span>↓</span>
+              View Resume
+              <span>→</span>
             </a>
           </div>
 

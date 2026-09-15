@@ -1,14 +1,27 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import profile from "../data/profile";
 
+// Replace with your own EmailJS values (free at emailjs.com)
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+
 function Contact() {
-  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage("Thank you! Your message has been submitted.");
-    e.target.reset();
+    setStatus("sending");
+
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, e.target, EMAILJS_PUBLIC_KEY)
+      .then(() => {
+        setStatus("success");
+        e.target.reset();
+      })
+      .catch(() => setStatus("error"));
   };
 
   return (
@@ -22,13 +35,10 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Get In Touch</h3>
-          <p>
-            I'm always interested in discussing new projects, opportunities
-            and ideas.
-          </p>
+          <p>I'm always interested in discussing new projects, opportunities and ideas.</p>
 
           <div className="contact-item">
-            <span>📧</span>
+            <span><i className="fas fa-envelope"></i></span>
             <div>
               <small>Email</small>
               <p>{profile.email}</p>
@@ -36,7 +46,7 @@ function Contact() {
           </div>
 
           <div className="contact-item">
-            <span>📱</span>
+            <span><i className="fas fa-phone"></i></span>
             <div>
               <small>Phone</small>
               <p>{profile.phone}</p>
@@ -44,7 +54,7 @@ function Contact() {
           </div>
 
           <div className="contact-item">
-            <span>💼</span>
+            <span><i className="fab fa-linkedin"></i></span>
             <div>
               <small>LinkedIn</small>
               <p>linkedin.com/in/snehakale2710</p>
@@ -52,7 +62,7 @@ function Contact() {
           </div>
 
           <div className="contact-item">
-            <span>🐙</span>
+            <span><i className="fab fa-github"></i></span>
             <div>
               <small>GitHub</small>
               <p>github.com/snehakale2710</p>
@@ -62,16 +72,23 @@ function Contact() {
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
+            <input type="text" name="from_name" placeholder="Your Name" required />
+            <input type="email" name="from_email" placeholder="Your Email" required />
           </div>
 
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Your Message" rows="7" required></textarea>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" placeholder="Your Message" rows="7" required></textarea>
 
-          <button type="submit">Send Message 🚀</button>
+          <button type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send Message 🚀"}
+          </button>
 
-          {message && <p className="success-message">{message}</p>}
+          {status === "success" && (
+            <p className="success-message">Thank you! Your message has been sent.</p>
+          )}
+          {status === "error" && (
+            <p className="error-message">Something went wrong — please email me directly.</p>
+          )}
         </form>
       </div>
     </section>

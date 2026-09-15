@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import SectionHeading from "./SectionHeading";
 import projects from "../data/projects";
+import profile from "../data/profile";
 
 function Projects() {
   return (
@@ -47,6 +48,12 @@ function Projects() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="projects-github-link">
+        <a href={profile.social.github} target="_blank" rel="noreferrer">
+          <i className="fab fa-github"></i> View more on GitHub
+        </a>
       </div>
     </section>
   );

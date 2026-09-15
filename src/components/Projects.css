@@ -117,3 +117,24 @@
     grid-template-columns: 1fr;
   }
 }
+.projects-github-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.projects-github-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid #474b75;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projects-github-link a:hover {
+  background: #7668ff;
+  border-color: #7668ff;
+}

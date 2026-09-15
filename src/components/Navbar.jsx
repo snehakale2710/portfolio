@@ -1,21 +1,20 @@
-
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
-const NAV_SECTIONS = ["home", "about", "skills", "projects", "resume", "contact"];
+const NAV_SECTIONS = ["home", "about", "education", "skills", "projects", "contact"];
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const closeMenu = () => {
+  function closeMenu() {
     setMenuOpen(false);
-  };
+  }
 
-  useEffect(() => {
+  useEffect(function () {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      function (entries) {
+        entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
@@ -24,13 +23,27 @@ function Navbar() {
       { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
     );
 
-    NAV_SECTIONS.forEach((id) => {
+    NAV_SECTIONS.forEach(function (id) {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    return function () {
+      observer.disconnect();
+    };
   }, []);
+
+  const navLinks = [];
+  for (let i = 0; i < NAV_SECTIONS.length; i++) {
+    const id = NAV_SECTIONS[i];
+    const label = id.charAt(0).toUpperCase() + id.slice(1);
+    const isActive = activeSection === id;
+    navLinks.push(
+      <a key={id} href={"#" + id} onClick={closeMenu} className={isActive ? "nav-active" : ""}>
+        {label}
+      </a>
+    );
+  }
 
   return (
     <nav className="navbar">
@@ -39,23 +52,11 @@ function Navbar() {
           Sneha<span>.</span>
         </a>
 
-        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-          {NAV_SECTIONS.map((id) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              onClick={closeMenu}
-              className={activeSection === id ? "nav-active" : ""}
-            >
-              {id.charAt(0).toUpperCase() + id.slice(1)}
-            </a>
-          ))}
+        <div className={"nav-links " + (menuOpen ? "active" : "")}>
+          {navLinks}
         </div>
 
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
           <span></span>
           <span></span>

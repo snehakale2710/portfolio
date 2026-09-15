@@ -15,37 +15,28 @@ function About() {
           <h3>Hello, I'm Sneha 👋</h3>
 
           <p>
-            I am a B.Sc. Computer Science student with a strong interest in
-            web development, software development, and modern technologies.
-            I enjoy creating responsive, user-friendly and visually appealing
-            applications.
-          </p>
-
-          <p>
-            My goal is to become a skilled full-stack developer and work on
-            real-world applications that solve practical problems.
-          </p>
-
-          <p>
-            I continuously improve my technical skills by building projects,
-            learning new technologies and exploring modern development tools.
+            I'm a Computer Science graduate currently pursuing my MCA, with a
+            strong interest in web development and AI/ML. I enjoy turning
+            ideas into responsive, functional applications and I'm actively
+            looking for full-stack developer roles where I can keep learning
+            and contribute from day one.
           </p>
 
           <div className="about-highlights">
             <div>
-              <span>🎯</span>
+              <span><i className="fas fa-bullseye"></i></span>
               <h4>Career Objective</h4>
-              <p>Become a professional full-stack developer.</p>
+              <p>Land a full-stack developer role and grow with a team.</p>
             </div>
 
             <div>
-              <span>💡</span>
+              <span><i className="fas fa-lightbulb"></i></span>
               <h4>What I Do</h4>
-              <p>Build modern web applications and dashboards.</p>
+              <p>Build web applications, dashboards, and small tools.</p>
             </div>
 
             <div>
-              <span>🚀</span>
+              <span><i className="fas fa-rocket"></i></span>
               <h4>My Strength</h4>
               <p>Quick learning, creativity and problem solving.</p>
             </div>
@@ -53,32 +44,18 @@ function About() {
         </div>
 
         <div className="about-card">
-          <div className="about-card-icon">💻</div>
+          <div className="about-card-icon">
+            <i className="fas fa-laptop-code"></i>
+          </div>
 
           <h3>My Professional Story</h3>
 
           <p>
-            My journey in technology started with programming fundamentals
-            and gradually expanded into web development, databases, Python,
-            React and backend development.
+            My journey in tech started with programming fundamentals and grew
+            into web development, databases, Python, React, and backend
+            development — with hands-on practice through academic and
+            personal projects.
           </p>
-
-          <div className="about-stats">
-            <div>
-              <strong>3+</strong>
-              <span>Years Learning</span>
-            </div>
-
-            <div>
-              <strong>10+</strong>
-              <span>Technologies</span>
-            </div>
-
-            <div>
-              <strong>10+</strong>
-              <span>Projects</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
