@@ -3,25 +3,30 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import profile from "../data/profile";
 
-// Replace with your own EmailJS values (free at emailjs.com)
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "service_yl8cgjd";
+const EMAILJS_TEMPLATE_ID = "template_28w3euu";
+const EMAILJS_PUBLIC_KEY = "-sRAz1COKhDyMa8Gw";
 
 function Contact() {
   const [status, setStatus] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("sending");
 
-    emailjs
-      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, e.target, EMAILJS_PUBLIC_KEY)
-      .then(() => {
-        setStatus("success");
-        e.target.reset();
-      })
-      .catch(() => setStatus("error"));
+    try {
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        e.target,
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus("success");
+      e.target.reset();
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setStatus("error");
+    }
   };
 
   return (

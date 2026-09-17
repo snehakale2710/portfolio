@@ -18,8 +18,7 @@ const projects = [
 
   {
     title: "STYLE HUB - E-Commerce Website",
-    image:
-      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&auto=format&fit=crop",
+    image:"src/assets/style_hub.jpg",
     description:
       "A modern full-stack fashion e-commerce website inspired by leading online fashion platforms, providing users with a smooth shopping experience.",
     features: [
@@ -37,8 +36,7 @@ const projects = [
 
   {
     title: "Visionary Times",
-    image:
-      "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop",
+    image:"src/assets/magazine.jpg?w=1200&auto=format&fit=crop",
     description:
       "A modern business and innovation magazine website featuring inspiring stories, entrepreneurs, technology trends, and ideas shaping the future.",
     features: [
@@ -57,7 +55,7 @@ const projects = [
   {
     title: "Electricity Bill Calculator",
     image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop",
+      "src/assets/EBC.jpg?w=1200&auto=format&fit=crop",
     description:
       "A user-friendly electricity bill calculator that calculates estimated electricity charges based on consumed units and applicable billing rates.",
     features: [
@@ -75,7 +73,7 @@ const projects = [
   {
     title: "Employee Salary Calculator",
     image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop",
+      "src/assets/ESC.jpg?w=1200&auto=format&fit=crop",
     description:
       "A salary calculation application that helps calculate an employee's gross salary, allowances, deductions, and final net salary.",
     features: [
@@ -93,7 +91,7 @@ const projects = [
   {
     title: "ATM Withdrawal Machine",
     image:
-      "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&auto=format&fit=crop",
+      "src/assets/ATM.jpg?w=1200&auto=format&fit=crop",
     description:
       "A Python-based ATM simulation that demonstrates real-world banking operations such as balance checking, cash withdrawal, deposit, and transaction validation.",
     features: [

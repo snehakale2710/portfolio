@@ -125,7 +125,9 @@
   .nav-links a:hover {
     background: rgba(139, 92, 246, 0.1);
   }
-}.nav-links a.nav-active {
+}
+
+.nav-links a.nav-active {
   color: #a78bfa;
   font-weight: 700;
 }

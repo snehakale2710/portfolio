@@ -38,30 +38,11 @@ function Footer() {
           <h3>Quick Links</h3>
           <button onClick={() => scrollToSection("home")}>Home</button>
           <button onClick={() => scrollToSection("about")}>About</button>
+          <button onClick={() => scrollToSection("education")}>Education</button>
           <button onClick={() => scrollToSection("skills")}>Skills</button>
           <button onClick={() => scrollToSection("projects")}>Projects</button>
           <button onClick={() => scrollToSection("contact")}>Contact</button>
         </div>
-
-        <div className="footer-links">
-          <h3>Services</h3>
-          <button onClick={() => scrollToSection("services")}>
-            Website Development
-          </button>
-          <button onClick={() => scrollToSection("services")}>
-            React Development
-          </button>
-          <button onClick={() => scrollToSection("services")}>
-            Python Development
-          </button>
-          <button onClick={() => scrollToSection("services")}>
-            Dashboard Development
-          </button>
-          <button onClick={() => scrollToSection("services")}>
-            API Development
-          </button>
-        </div>
-
         <div className="footer-contact">
           <h3>Contact</h3>
           <p>📧 {profile.email}</p>
