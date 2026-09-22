@@ -17,7 +17,7 @@ function Projects() {
         {projects.map((project) => (
           <div className="project-card" key={project.title}>
             <div className="project-image">
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={project.title} loading="lazy" />
             </div>
 
             <div className="project-content">

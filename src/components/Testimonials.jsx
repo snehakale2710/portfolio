@@ -1,4 +1,3 @@
-import React from "react";
 import "./Testimonials.css";
 import SectionHeading from "./SectionHeading";
 import testimonials from "../data/testimonials";

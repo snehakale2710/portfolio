@@ -1,4 +1,3 @@
-import React from "react";
 import "./GitHub.css";
 
 function GitHub() {

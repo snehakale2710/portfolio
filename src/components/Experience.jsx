@@ -1,4 +1,3 @@
-import React from "react";
 import "./Experience.css";
 import SectionHeading from "./SectionHeading";
 import experiences from "../data/experiences";

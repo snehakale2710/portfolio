@@ -1,26 +1,32 @@
+import sentimentImg from "../assets/sentiment_analyzer.jpg";
+import styleHub from "../assets/style_hub.jpg";
+import magazine from "../assets/magazine.jpg";
+import rlp from "../assets/RLP.jpg";
+import r from "../assets/registration.jpg";
+import WeatherAPI from "../assets/weather.jpg";
+
 const projects = [
   {
     title: "Hybrid Sentiment Analyzer",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop",
+    image: sentimentImg,
     description:
-      "An intelligent sentiment analysis application that analyzes text and identifies whether the expressed sentiment is positive, negative, or neutral.",
+      "An intelligent application that analyzes text and identifies positive, negative, or neutral sentiment.",
     features: [
       "Text sentiment analysis",
-      "Positive, negative and neutral classification",
+      "Sentiment classification",
       "Data visualization",
       "Interactive analysis",
     ],
     technologies: ["Python", "NLP", "Machine Learning", "Pandas"],
-    github: "https://github.com/",
-    live: "#",
+    github: "https://github.com/snehakale2710/Sentiment_Analyzer.git",
+    live: "https://sentiment-analyzer-jnl8.vercel.app",
   },
 
   {
     title: "STYLE HUB - E-Commerce Website",
-    image:"src/assets/style_hub.jpg",
+    image: styleHub,
     description:
-      "A modern full-stack fashion e-commerce website inspired by leading online fashion platforms, providing users with a smooth shopping experience.",
+      "A modern full-stack fashion e-commerce website offering a smooth and user-friendly online shopping experience.",
     features: [
       "Product browsing",
       "Category filtering",
@@ -36,13 +42,13 @@ const projects = [
 
   {
     title: "Visionary Times",
-    image:"src/assets/magazine.jpg?w=1200&auto=format&fit=crop",
+    image: magazine,
     description:
-      "A modern business and innovation magazine website featuring inspiring stories, entrepreneurs, technology trends, and ideas shaping the future.",
+      "A modern magazine website showcasing business, technology, entrepreneurs, and innovation stories.",
     features: [
       "Modern magazine layout",
       "Hero slider",
-      "Business and innovation articles",
+      "Article sections",
       "Multi-page navigation",
       "Responsive design",
     ],
@@ -53,58 +59,54 @@ const projects = [
   },
 
   {
-    title: "Electricity Bill Calculator",
-    image:
-      "src/assets/EBC.jpg?w=1200&auto=format&fit=crop",
+    title: "Responsive Watch Landing Page",
+    image: rlp,
     description:
-      "A user-friendly electricity bill calculator that calculates estimated electricity charges based on consumed units and applicable billing rates.",
+      "A stylish and responsive landing page designed to showcase a watch product with a clean and modern interface.",
     features: [
-      "Electricity unit input",
-      "Automatic bill calculation",
-      "Slab-based calculation",
-      "Instant result display",
-      "Simple and responsive interface",
+      "Responsive design",
+      "Modern UI",
+      "Watch showcase",
+      "Smooth navigation",
+      "Mobile-friendly layout",
     ],
     technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/",
-    live: "#",
+    github: "https://github.com/snehakale2710/Responsive-Landing-Page.git",
+    live: "https://responsive-landing-page-nine-rho.vercel.app/",
   },
 
   {
-    title: "Employee Salary Calculator",
-    image:
-      "src/assets/ESC.jpg?w=1200&auto=format&fit=crop",
+    title: "Registration Form",
+    image: r,
     description:
-      "A salary calculation application that helps calculate an employee's gross salary, allowances, deductions, and final net salary.",
+      "A simple and responsive registration form designed to collect and validate user information through a clean interface.",
     features: [
-      "Employee salary input",
-      "Allowance calculation",
-      "Deduction calculation",
-      "Gross salary calculation",
-      "Net salary calculation",
+      "User registration",
+      "Form validation",
+      "Input fields",
+      "Error handling",
+      "Responsive design",
     ],
     technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/",
-    live: "#",
+    github: "https://github.com/snehakale2710/registration-form.git",
+    live: "https://registration-form-xi-orcin.vercel.app/",
   },
 
   {
-    title: "ATM Withdrawal Machine",
-    image:
-      "src/assets/ATM.jpg?w=1200&auto=format&fit=crop",
+    title: "Weather API",
+    image: WeatherAPI,
     description:
-      "A Python-based ATM simulation that demonstrates real-world banking operations such as balance checking, cash withdrawal, deposit, and transaction validation.",
+      "A weather application that uses an API to display current weather information based on the selected location.",
     features: [
-      "PIN authentication",
-      "Balance checking",
-      "Cash withdrawal",
-      "Deposit functionality",
-      "Withdrawal validation",
-      "Transaction handling",
+      "City search",
+      "Weather information",
+      "API integration",
+      "Dynamic data display",
+      "Responsive design",
     ],
-    technologies: ["Python", "OOP", "Classes", "Functions"],
-    github: "https://github.com/",
-    live: "#",
+    technologies: ["HTML", "CSS", "JavaScript", "Weather API"],
+    github: "https://github.com/snehakale2710/weather-app.git",
+    live: "https://weather-app-snowy-alpha-35.vercel.app/",
   },
 ];
 

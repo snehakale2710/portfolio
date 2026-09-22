@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const NAV_SECTIONS = [
@@ -20,7 +20,6 @@ function Navbar() {
 
   useEffect(function () {
     function handleScroll() {
-      // Keep Home active when the page is at the top
       if (window.scrollY < 100) {
         setActiveSection("home");
         return;
@@ -42,8 +41,6 @@ function Navbar() {
     }
 
     window.addEventListener("scroll", handleScroll);
-
-    // Check initial position
     handleScroll();
 
     return function () {
@@ -76,10 +73,14 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="#home" className="logo" onClick={function () {
-          setActiveSection("home");
-          closeMenu();
-        }}>
+        <a
+          href="#home"
+          className="logo"
+          onClick={function () {
+            setActiveSection("home");
+            closeMenu();
+          }}
+        >
           Sneha<span>.</span>
         </a>
 

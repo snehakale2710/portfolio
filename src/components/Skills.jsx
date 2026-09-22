@@ -1,5 +1,3 @@
-
-import React from "react";
 import "./Skills.css";
 import SectionHeading from "./SectionHeading";
 import skills from "../data/skills";

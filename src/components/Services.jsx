@@ -1,4 +1,3 @@
-import React from "react";
 import "./Services.css";
 import SectionHeading from "./SectionHeading";
 import services from "../data/services";

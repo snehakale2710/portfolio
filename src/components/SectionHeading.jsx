@@ -1,5 +1,3 @@
-import React from "react";
-
 function SectionHeading({ label, title, description }) {
   return (
     <div className="section-heading">

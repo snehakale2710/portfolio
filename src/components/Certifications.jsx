@@ -1,4 +1,3 @@
-import React from "react";
 import "./Certifications.css";
 import SectionHeading from "./SectionHeading";
 import achievements from "../data/certifications";

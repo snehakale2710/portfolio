@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import profile from "../data/profile";
 
